@@ -31,7 +31,10 @@ public class HeapSorter extends Sorter {
         	//11. swap the array elements at 0 and i.
         	int holder = array[0];
         	array[0] = array[i];
+        	array[i] = holder;
+        	display.updateDisplay();
             //12. call the heapSort method with i and 0
+        	heapSort(array, i, 0, display);
         }
 	}
 	
