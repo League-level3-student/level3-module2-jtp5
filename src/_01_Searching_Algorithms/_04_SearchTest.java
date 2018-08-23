@@ -11,6 +11,9 @@ class _04_SearchTest {
 	@Test
 	public void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
+		String[] words = {"hi", "bye", "good", "bad"};
+		assertEquals(_00_LinearSearch.linearSearch(words, "good"), 2);
+		assertEquals(_00_LinearSearch.linearSearch(words, "bad"), 3);
 	}
 
 	@Test
